@@ -17,6 +17,10 @@ importers:
       prisma:
         specifier: ^6.18.0
         version: 6.18.0
+    devDependencies:
+      '@types/node':
+        specifier: ^24.9.2
+        version: 24.9.2
 
 packages:
 
@@ -58,6 +62,9 @@ packages:
 
   '@standard-schema/spec@1.0.0':
     resolution: {integrity: sha512-m2bOd0f2RT9k8QJx1JN85cZYyH1RqFBdlwtkSlf4tBDYLCiiZnv1fIIwacK6cqwXavOydf0NPToMQgpKq+dVlA==}
+
+  '@types/node@24.9.2':
+    resolution: {integrity: sha512-uWN8YqxXxqFMX2RqGOrumsKeti4LlmIMIyV0lgut4jx7KQBcBiW6vkDtIBvHnHIquwNfJhk8v2OtmO8zXWHfPA==}
 
   c12@3.1.0:
     resolution: {integrity: sha512-uWoS8OU1MEIsOv8p/5a82c3H31LsWVR5qiyXVfBNOzfffjUWtPnhAb4BYI2uG2HfGmZmFjCtui5XNWaps+iFuw==}
@@ -160,6 +167,9 @@ packages:
   tinyexec@1.0.1:
     resolution: {integrity: sha512-5uC6DDlmeqiOwCPmK9jMSdOuZTh8bU39Ys6yidB+UTt5hfZUPGAypSgFRiEp+jbi9qH40BLDvy85jIU88wKSqw==}
 
+  undici-types@7.16.0:
+    resolution: {integrity: sha512-Zz+aZWSj8LE6zoxD+xrjh4VfkIG8Ya6LvYkZqtUQGJPZjYl53ypCaUwWqo7eI0x66KBGeRo+mlBEkMSeSZ38Nw==}
+
 snapshots:
 
   '@prisma/client@6.18.0(prisma@6.18.0)':
@@ -201,6 +211,10 @@ snapshots:
       '@prisma/debug': 6.18.0
 
   '@standard-schema/spec@1.0.0': {}
+
+  '@types/node@24.9.2':
+    dependencies:
+      undici-types: 7.16.0
 
   c12@3.1.0:
     dependencies:
@@ -300,3 +314,5 @@ snapshots:
   readdirp@4.1.2: {}
 
   tinyexec@1.0.1: {}
+
+  undici-types@7.16.0: {}
